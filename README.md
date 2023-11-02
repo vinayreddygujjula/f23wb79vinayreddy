@@ -6,9 +6,4 @@
 Render link : https://f23wb79vinayreddy.onrender.com
 ## Class : TICKETS
 
-### Attributes : 
-##### eventName 
-##### venue 
-##### price 
-##### eventDate 
-##### ticketType
+### Attributes {eventName ,venue ,price ,location ,ticketType}
