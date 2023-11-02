@@ -4,11 +4,17 @@ block content
   h1= title
   div(class="container-fluid")
     div(class="row")
-      each ticket in r
+      each ticket,index in r
         div(class="col-sm-2")
           p Event Name: #{ticket.eventName}
           p Venue: #{ticket.venue}
           p Price: #{ticket.price}
           p Location: #{ticket.location}
           p Ticket Type: #{ticket.ticketType}
+          div(onclick=`buy(${index})`, class="btn btn-primary") Buy
+
+  script.
+    function buy(index) {
+      alert(`You purchased item ${index + 1}`);
+    }
         
